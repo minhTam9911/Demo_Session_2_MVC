@@ -1,0 +1,87 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+
+
+  
+  <title>CodePen - Success checkmark animation</title>
+    <link rel="canonical" href="https://codepen.io/bekahmcdonald/pen/NXqgPW" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+  <link href="~/Css/StyleSheet.scss" rel="stylesheet"/>
+<style>
+svg {
+  display: block;
+  height: 40vw;
+  width: 40vw;
+  color: #5E60CE;
+  /* SVG path use currentColor to inherit this */
+}
+
+.circle {
+  stroke-dasharray: 76;
+  stroke-dashoffset: 76;
+  -webkit-animation: draw 1s forwards;
+          animation: draw 1s forwards;
+}
+
+.tick {
+  stroke-dasharray: 18;
+  stroke-dashoffset: 18;
+  -webkit-animation: draw 1s forwards 1s;
+          animation: draw 1s forwards 1s;
+}
+
+
+/* For styling demo, not required */
+body {
+  background-color: #64DFDF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+  <svg viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <path class="circle" d="M13 1C6.372583 1 1 6.372583 1 13s5.372583 12 12 12 12-5.372583 12-12S19.627417 1 13 1z"/>
+    <path class="tick" d="M6.5 13.5L10 17 l8.808621-8.308621"/>
+  </g>
+</svg>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+  
+      <script id="rendered-js" >
+// CSS only!
+//# sourceURL=pen.js
+    </script>
+
+  
+</body>
+
+</html>

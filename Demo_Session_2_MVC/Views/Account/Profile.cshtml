@@ -1,0 +1,16 @@
+﻿@model Demo_Session_2_MVC.Models.Account
+<h2>Profile</h2>
+
+<form method="post" asp-controller="account" asp-action="profile">
+    UserName <input type="text" asp-for="UserName" />
+    </br>
+
+    Password <input type="text" asp-for="Password"/>
+    </br>
+    Fullname <input type="text"  asp-for="FullName"/>
+    </br>
+
+    <input type="submit" value="Update" />
+
+
+</form>

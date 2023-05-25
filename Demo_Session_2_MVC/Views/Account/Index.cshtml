@@ -1,0 +1,13 @@
+﻿<h2>Form Login</h2>
+
+<form method="post" asp-controller="account" asp-action="login">
+    UserName <input type="text" name="username" />
+    </br>
+    PassWord <input type="password" name="password" />
+    </br>
+
+    <input type="submit" value="Submit" />
+
+    <lable>@TempData["msg"]</lable>
+
+</form>
